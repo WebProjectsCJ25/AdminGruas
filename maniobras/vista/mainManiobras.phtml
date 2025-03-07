@@ -1,0 +1,175 @@
+<div class="card">
+    <div class="card-header pb-0" style="background-color: #bbb;">
+        <div class="row">
+            <div class="col-lg-6 col-7">
+                <h6>Tabla</h6>
+                <p class="text-sm mb-0">
+                    <i class="fa fa-check text-info" aria-hidden="true"></i>
+                    <span id="infoSection" class="font-weight-bold ms-1"></span>
+                </p>
+            </div>
+            <!-- BTNS -->
+            <div class="col-lg-6 col-5 my-auto text-end">
+                <!-- Bloque dinamico de INFORMES dependiendo sección -->
+                <a id="btnExcel" class="btnExcelOperadores btn btn-outline-success btn-sm mb-0 me-3">
+                    Exportar Excel
+                </a>
+
+                <!-- <div class="dropdown float-lg-end pe-4">
+                    <a class="cursor-pointer" id="dropdownTable" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-ellipsis-v text-secondary"></i>
+                    </a>
+                    <ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
+                        <li><a class="dropdown-item border-radius-md" href="javascript:;">Action</a>
+                        </li>
+                        <li><a class="dropdown-item border-radius-md" href="javascript:;">Another
+                                action</a></li>
+                        <li><a class="dropdown-item border-radius-md" href="javascript:;">Something
+                                else here</a></li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="card-body px-0 pb-2" style="background-color: #bbb;">
+        <div class="table-responsive">
+            <!-- EMPIEZA DATATABLE -->
+            <table id="dataTblManiobras" class="table align-items-center mb-0">
+                <thead>
+                    <tr>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            #
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Operador
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Encargado
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Grua
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Municipio
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Ubicación
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Inventario
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Fecha inicio
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Fecha fin
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Costo
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Imagen
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Observaciones
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            fecha registro
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Marca
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Tipo
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Modelo
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Placa
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Serie
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Color
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Motor
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Remolque
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Serie remolque
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Placa remolque
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Segundo remolque
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Serie segundo remolque
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Plca segundo remolque
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Dolly
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Serie dolly
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Autoridad
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Motivo retención
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Disposición
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Fecha salida
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Núm factura
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Costo final
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            IVA
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Total
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Observaciones finales
+                        </th>
+                        <th class="text-secondary text-center text-sm font-weight-bolder opacity-7">
+                            Estatus
+                        </th>
+                        <th class="text-secondary text-center text-dark text-sm font-weight-bolder opacity-7">
+                            Ingreso
+                        </th>
+                        <th class="text-secondary text-center text-dark text-sm font-weight-bolder opacity-7">
+                            Salida
+                        </th>
+                        <th class="text-secondary text-center text-dark text-sm font-weight-bolder opacity-7">
+                            Editar
+                        </th>
+                        <th class="text-secondary text-center text-dark text-sm font-weight-bolder opacity-7">
+                            Ver
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="tblBodyManiobras" class="table align-items-center mb-0">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

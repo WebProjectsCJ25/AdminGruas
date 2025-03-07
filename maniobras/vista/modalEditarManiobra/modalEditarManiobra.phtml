@@ -1,0 +1,239 @@
+<div class="modal fade" id="modalEditarManiobra" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="z-index: 1100;">
+    <div class="modal-dialog modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Editar Maniobra</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form name="frmEditarManiobra" id="frmEditarManiobra" onsubmit="return false" autocomplete="off">
+                    <div class="row mb-4">
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroOperador" class="form-label">Operador</label>
+                            <select id="txtEditarRegistroOperador" name="txtEditarRegistroOperador" class="form-select px-2" data-error="#failEditarRegistroOperador">
+                            </select>
+                            <p id="failEditarRegistroOperador"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroEncargado" class="form-label">Encargado</label>
+                            <select id="txtEditarRegistroEncargado" name="txtEditarRegistroEncargado" class="form-select px-2" data-error="#failEditarRegistroEncargado">
+                            </select>
+                            <p id="failEditarRegistroEncargado"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroGrua" class="form-label">Grúa</label>
+                            <select id="txtEditarRegistroGrua" name="txtEditarRegistroGrua" class="form-select px-2" data-error="#failEditarRegistroGrua">
+                            </select>
+                            <p id="failEditarRegistroGrua"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroMunicipio" class="form-label">Municipio</label>
+                            <select id="txtEditarRegistroMunicipio" name="txtEditarRegistroMunicipio" class="form-select px-2" data-error="#failEditarRegistroMunicipio">
+                            </select>
+                            <p id="failEditarRegistroMunicipio"></p>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroUbicacion" class="form-label">Ubicacion</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroUbicacion" name="txtEditarRegistroUbicacion" type="text" data-error="#failEditarRegistroUbicacion">
+                            <p id="failEditarRegistroUbicacion"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroInventario" class="form-label">Inventario</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroInventario" name="txtEditarRegistroInventario" type="text" data-error="#failEditarRegistroInventario">
+                            <p id="failEditarRegistroInventario"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroFechaInicio" class="form-label">Fecha Inicio</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroFechaInicio" name="txtEditarRegistroFechaInicio" type="datetime-local" data-error="#failEditarRegistroFechaInicio">
+                            <p id="failEditarRegistroFechaInicio"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroFechaFin" class="form-label">Fecha Fin</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroFechaFin" name="txtFechaFin" type="datetime-local" data-error="#failEditarRegistroFechaFin">
+                            <p id="failEditarRegistroFechaFin"></p>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroCosto" class="form-label">Costo</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroCosto" name="txtCosto" type="text" data-error="#failEditarRegistroCosto">
+                            <p id="failEditarRegistroCosto"></p>
+                        </div>
+                        <!-- <div class="col-lg-3 col-md-3 mb-3">
+                                        <label for="txtImagen" class="form-label">Imágen</label>
+                                        <input class="form-control border px-2" id="txtImagen" name="txtImagen"
+                                            type="text">
+                                    </div> -->
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroObservaciones" class="form-label">Observaciones</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroObservaciones" name="txtEditarRegistroObservaciones" type="text" data-error="#failEditarRegistroObservaciones">
+                            <p id="failEditarRegistroObservaciones"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroFechaRegistro" class="form-label">Fecha Registro</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroFechaRegistro" name="txtEditarRegistroFechaRegistro" type="datetime-local" data-error="#failEditarRegistroFechaRegistro">
+                            <p id="failEditarRegistroFechaRegistro"></p>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroMarca" class="form-label">Marca</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroMarca" name="txtEditarRegistroMarca" type="text" data-error="#failEditarRegistroMarca">
+                            <p id="failEditarRegistroMarca"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroTipo" class="form-label">Tipo</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroTipo" name="txtEditarRegistroTipo" type="text" data-error="#failEditarRegistroTipo">
+                            <p id="failEditarRegistroTipo"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroPlaca" class="form-label">Placa</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroPlaca" name="txtEditarRegistroPlaca" type="text" data-error="#failEditarRegistroPlaca">
+                            <p id="failEditarRegistroPlaca"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroSerie" class="form-label">Serie</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroSerie" name="txtEditarRegistroSerie" type="text" data-error="#failEditarRegistroSerie">
+                            <p id="failEditarRegistroSerie"></p>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroMotor" class="form-label">Motor</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroMotor" name="txtEditarRegistroMotor" type="text" data-error="#failEditarRegistroMotor">
+                            <p id="failEditarRegistroMotor"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroModelo" class="form-label">Modelo</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroModelo" name="txtEditarRegistroModelo" type="text" data-error="#failEditarRegistroModelo">
+                            <p id="failEditarRegistroModelo"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroColor" class="form-label">Color</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroColor" name="txtEditarRegistroColor" type="text" data-error="#failEditarRegistroColor">
+                            <p id="failEditarRegistroColor"></p>
+                        </div>
+                        <!-- <div class="col-lg-3 col-md-3 mb-3">
+                                        <label for="txtEstatus" class="form-label">Estatus</label>
+                                        <select id="txtEstatus" name="txtEstatus" class="form-select">
+                                            <option value="1">Maniobra</option>
+                                            <option value="2">Ingreso depósito</option>
+                                            <option value="3">Salida depósito</option>
+                                        </select>
+                                    </div> -->
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroRemolque" class="form-label">Remolque</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroRemolque" name="txtEditarRegistroRemolque" type="text" data-error="#failEditarRegistroRemolque">
+                            <p id="failEditarRegistroRemolque"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroSerieRemolque" class="form-label">Serie remolque</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroSerieRemolque" name="txtEditarRegistroSerieRemolque" type="text" data-error="#failEditarRegistroSerieRemolque">
+                            <p id="failEditarRegistroSerieRemolque"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroPlacaRemolque" class="form-label">Placa remolque</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroPlacaRemolque" name="txtEditarRegistroPlacaRemolque" type="text" data-error="#failEditarRegistroPlacaRemolque">
+                            <p id="failEditarRegistroPlacaRemolque"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroSegundoRemolque" class="form-label">Segundo remolque</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroSegundoRemolque" name="txtEditarRegistroSegundoRemolque" type="text" data-error="#failEditarRegistroSegundoRemolque">
+                            <p id="failEditarRegistroSegundoRemolque"></p>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroSerieSegundoRemolque" class="form-label">Serie segundo remolque</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroSerieSegundoRemolque" name="txtEditarRegistroSerieSegundoRemolque" type="text" data-error="#failEditarRegistroSerieSegundoRemolque">
+                            <p id="failEditarRegistroSerieSegundoRemolque"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroPlacaSegundoRemolque" class="form-label">Placa segundo remolque</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroPlacaSegundoRemolque" name="txtEditarRegistroPlacaSegundoRemolque" type="text" data-error="#failEditarRegistroPlacaSegundoRemolque">
+                            <p id="failEditarRegistroPlacaSegundoRemolque"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroDolly" class="form-label">Dolly</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroDolly" name="txtEditarRegistroDolly" type="text" data-error="#failEditarRegistroDolly">
+                            <p id="failEditarRegistroDolly"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroSerieDolly" class="form-label">Serie dolly</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroSerieDolly" name="txtEditarRegistroSerieDolly" type="text" data-error="#failEditarRegistroSerieDolly">
+                            <p id="failEditarRegistroSerieDolly"></p>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroAutoridad" class="form-label">Autoridad</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroAutoridad" name="txtEditarRegistroAutoridad" type="text" data-error="#failEditarRegistroAutoridad">
+                            <p id="failEditarRegistroAutoridad"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroMotivoRetencion" class="form-label">Motivo retención</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroMotivoRetencion" name="txtEditarRegistroMotivoRetencion" type="text" data-error="#failEditarRegistroMotivoRetencion">
+                            <p id="failEditarRegistroMotivoRetencion"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroDisposicion" class="form-label">Disposición</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroDisposicion" name="txtEditarRegistroDisposicion" type="text" data-error="#failEditarRegistroDisposicion">
+                            <p id="failEditarRegistroDisposicion"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroFechaSalida" class="form-label">FechaSalida</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroFechaSalida" name="txtEditarRegistroFechaSalida" type="datetime-local" data-error="#failEditarRegistroFechaSalida">
+                            <p id="failEditarRegistroFechaSalida"></p>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroNumeroFactura" class="form-label">Número factura</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroNumeroFactura" name="txtEditarRegistroNumeroFactura" type="text" data-error="#failEditarRegistroNumeroFactura">
+                            <p id="failEditarRegistroNumeroFactura"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroCostoFinal" class="form-label">Costo final</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroCostoFinal" name="txtEditarRegistroCostoFinal" type="text" data-error="#failEditarRegistroCostoFinal">
+                            <p id="failEditarRegistroCostoFinal"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroIva" class="form-label">IVA</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroIva" name="txtEditarRegistroIva" type="text" data-error="#failEditarRegistroIva">
+                            <p id="failEditarRegistroIva"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroTotal" class="form-label">Total</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroTotal" name="txtEditarRegistroTotal" type="text" data-error="#failEditarRegistroTotal">
+                            <p id="failEditarRegistroTotal"></p>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroObservacionesFinales" class="form-label">Observaciones</label>
+                            <input class="form-control border px-2" id="txtEditarRegistroObservacionesFinales" name="txtEditarRegistroObservacionesFinales" type="text" data-error="#failEditarRegistroObservacionesFinales">
+                            <p id="failEditarRegistroObservacionesFinales"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtEditarRegistroEstatus" class="form-label">Estatus</label>
+                            <select id="txtEditarRegistroEstatus" name="txtEditarRegistroEstatus" class="form-select" data-error="#failEditarRegistroEstatus">
+                                <option value="1">Maniobra</option>
+                                <option value="2">Ingreso depósito</option>
+                                <option value="3">Salida depósito</option>
+                            </select>
+                            <p id="failEditarRegistroEstatus"></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button id="btnCerrarEditarManiobra" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button id="btnGuardarEditarManiobra" type="button" class="btn btn-success" data-bs-dismiss="modal">Editar</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,61 @@
+<div class="modal fade" id="modalSalidaDeposito" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="z-index: 1100">
+    <div class="modal-dialog modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                    Salida depósito
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form name="frmSalidaDeposito" id="frmSalidaDeposito" onsubmit="return false" autocomplete="off" enctype="multipart/form-data">
+                    <div class="row mb-4">
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtSalidaDepositoFechaSalida" class="form-label">Fecha de salida</label>
+                            <input class="form-control border px-2" id="txtSalidaDepositoFechaSalida" name="txtSalidaDepositoFechaSalida" type="datetime-local" data-error="#failSalidaDepositoFechaSalida" />
+                            <p id="failSalidaDepositoFechaSalida"></p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtSalidaDepositoNumeroFactura" class="form-label">Número de factura</label>
+                            <input class="form-control border px-2" id="txtSalidaDepositoNumeroFactura" name="txtSalidaDepositoNumeroFactura" type="text" data-error="#failSalidaDepositoNumeroFactura" />
+                            <p id="failSalidaDepositoNumeroFactura"></p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtSalidaDepositoCostoFinal" class="form-label">Costo final</label>
+                            <input class="form-control border px-2" id="txtSalidaDepositoCostoFinal" name="txtSalidaDepositoCostoFinal" type="text" data-error="#failSalidaDepositoCostoFinal" />
+                            <p id="failSalidaDepositoCostoFinal"></p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtSalidaDepositoIva" class="form-label">IVA</label>
+                            <input class="form-control border px-2" id="txtSalidaDepositoIva" name="txtSalidaDepositoIva" type="text" data-error="#failSalidaDepositoIva" />
+                            <p id="failSalidaDepositoIva"></p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtSalidaDepositoTotal" class="form-label">Total</label>
+                            <input class="form-control border px-2" id="txtSalidaDepositoTotal" name="txtSalidaDepositoTotal" type="text" data-error="#failSalidaDepositoTotal" />
+                            <p id="failSalidaDepositoTotal"></p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtSalidaDepositoObservacionesFinales" class="form-label">Observaciones finales</label>
+                            <input class="form-control border px-2" id="txtSalidaDepositoObservacionesFinales" name="txtSalidaDepositoObservacionesFinales" type="text" data-error="#failSalidaDepositoObservacionesFinales" />
+                            <p id="failSalidaDepositoObservacionesFinales"></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button id="btnCerrarSalidaDeposito" type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Cerrar
+                </button>
+                <button id="btnGuardarSalidaDeposito" type="button" class="btn btn-success">
+                    Guardar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

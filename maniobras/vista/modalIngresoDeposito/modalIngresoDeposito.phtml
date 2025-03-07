@@ -1,0 +1,220 @@
+<div class="modal fade" id="modalIngresoDeposito" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="z-index: 1100">
+    <div class="modal-dialog modal-dialog-scrollable modal-xl">
+        <div class="modal-content bg-gray-500">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                    Ingreso depósito
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form name="frmIngresoDeposito" id="frmIngresoDeposito" onsubmit="return false" autocomplete="off" enctype="multipart/form-data">
+                    <div class="row mb-4">
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtIngresoDepositoNumeroInventario" class="form-label">Número inventario</label>
+                            <input
+                                class="form-control border px-2"
+                                id="txtIngresoDepositoNumeroInventario"
+                                name="txtIngresoDepositoNumeroInventario"
+                                type="text"
+                                data-error="#failIngresoNumeroinventario" />
+                            <p id="failIngresoNumeroinventario"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtIngresoDepositoMarcaVehiculo" class="form-label">Marca vehículo</label>
+                            <input
+                                class="form-control border px-2"
+                                id="txtIngresoDepositoMarcaVehiculo"
+                                name="txtIngresoDepositoMarcaVehiculo"
+                                type="text"
+                                data-error="#failIngresoDepositoMarcaVehiculo" />
+                            <p id="failIngresoDepositoMarcaVehiculo"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtIngresoDepositoTipoVehiculo" class="form-label">Tipo vehículo</label>
+                            <input
+                                class="form-control border px-2"
+                                id="txtIngresoDepositoTipoVehiculo"
+                                name="txtIngresoDepositoTipoVehiculo"
+                                type="text"
+                                data-error="#failIngresoDepositoTipoVehiculo" />
+                            <p id="failIngresoDepositoTipoVehiculo"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtIngresoDepositoSerieVehiculo" class="form-label">Serie vehículo</label>
+                            <input
+                                class="form-control border px-2"
+                                id="txtIngresoDepositoSerieVehiculo"
+                                name="txtIngresoDepositoSerieVehiculo"
+                                type="text"
+                                data-error="#failIngresoDepositoSerieVehiculo" />
+                            <p id="failIngresoDepositoSerieVehiculo"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtIngresoDepositoModeloVehiculo" class="form-label">Modelo vehículo</label>
+                            <input
+                                class="form-control border px-2"
+                                id="txtIngresoDepositoModeloVehiculo"
+                                name="txtIngresoDepositoModeloVehiculo"
+                                type="text"
+                                data-error="#failIngresoDepositoModeloVehiculo" />
+                            <p id="failIngresoDepositoModeloVehiculo"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtIngresoDepositoColorVehiculo" class="form-label">Color vehículo</label>
+                            <input
+                                class="form-control border px-2"
+                                id="txtIngresoDepositoColorVehiculo"
+                                name="txtIngresoDepositoColorVehiculo"
+                                type="text"
+                                data-error="#failIngresoDepositoColorVehiculo" />
+                            <p id="failIngresoDepositoColorVehiculo"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtIngresoDepositoMotorVehiculo" class="form-label">Motor vehículo</label>
+                            <input
+                                class="form-control border px-2"
+                                id="txtIngresoDepositoMotorVehiculo"
+                                name="txtIngresoDepositoMotorVehiculo"
+                                type="text"
+                                data-error="#failIngresoDepositoMotorVehiculo" />
+                            <p id="failIngresoDepositoMotorVehiculo"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtIngresoDepositoPlacaVehiculo" class="form-label">Placa vehículo</label>
+                            <input
+                                class="form-control border px-2"
+                                id="txtIngresoDepositoPlacaVehiculo"
+                                name="txtIngresoDepositoPlacaVehiculo"
+                                type="text"
+                                data-error="#failIngresoDepositoPlacaVehiculo" />
+                            <p id="failIngresoDepositoPlacaVehiculo"></p>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtIngresoDepositoRemolque" class="form-label">Remolque</label>
+                            <input
+                                class="form-control border px-2"
+                                id="txtIngresoDepositoRemolque"
+                                name="txtIngresoDepositoRemolque"
+                                type="text"
+                                data-error="#failIngresoDepositoRemolque" />
+                            <p id="failIngresoDepositoRemolque"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtIngresoDepositoSerieRemolque" class="form-label">Serie remolque</label>
+                            <input
+                                class="form-control border px-2"
+                                id="txtIngresoDepositoSerieRemolque"
+                                name="txtIngresoDepositoSerieRemolque"
+                                type="text"
+                                data-error="#failIngresoDepositoSerieRemolque" />
+                            <p id="failIngresoDepositoSerieRemolque"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtIngresoDepositoPlacasRemolque" class="form-label">Placas remolque</label>
+                            <input
+                                class="form-control border px-2"
+                                id="txtIngresoDepositoPlacasRemolque"
+                                name="txtIngresoDepositoPlacasRemolque"
+                                type="text"
+                                data-error="#failIngresoDepositoPlacasRemolque" />
+                            <p id="failIngresoDepositoPlacasRemolque"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtIngresoDepositoSegundoRemolque" class="form-label">Segundo remolque</label>
+                            <input
+                                class="form-control border px-2"
+                                id="txtIngresoDepositoSegundoRemolque"
+                                name="txtIngresoDepositoSegundoRemolque"
+                                type="text"
+                                data-error="#failIngresoDepositoSegundoRemolque" />
+                            <p id="failIngresoDepositoSegundoRemolque"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtIngresoDepositoSerieSegundoRemolque" class="form-label">Serie segundo remolque</label>
+                            <input
+                                class="form-control border px-2"
+                                id="txtIngresoDepositoSerieSegundoRemolque"
+                                name="txtIngresoDepositoSerieSegundoRemolque"
+                                type="text"
+                                data-error="#failIngresoDepositoSerieSegundoRemolque" />
+                            <p id="failIngresoDepositoSerieSegundoRemolque"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtIngresoDepositoPlacasSegundoRemolque" class="form-label">Placas segundo remolque</label>
+                            <input
+                                class="form-control border px-2"
+                                id="txtIngresoDepositoPlacasSegundoRemolque"
+                                name="txtIngresoDepositoPlacasSegundoRemolque"
+                                type="text"
+                                data-error="#failIngresoDepositoPlacasSegundoRemolque" />
+                            <p id="failIngresoDepositoPlacasSegundoRemolque"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtIngresoDepositoDolly" class="form-label">Dolly</label>
+                            <input
+                                class="form-control border px-2"
+                                id="txtIngresoDepositoDolly"
+                                name="txtIngresoDepositoDolly"
+                                type="text"
+                                data-error="#failIngresoDepositoDolly" />
+                            <p id="failIngresoDepositoDolly"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtIngresoDepositoSerieDolly" class="form-label">Serie dolly</label>
+                            <input
+                                class="form-control border px-2"
+                                id="txtIngresoDepositoSerieDolly"
+                                name="txtIngresoDepositoSerieDolly"
+                                type="text"
+                                data-error="#failIngresoDepositoSerieDolly" />
+                            <p id="failIngresoDepositoSerieDolly"></p>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtIngresoDepositoAutoridad" class="form-label">Autoridad</label>
+                            <input
+                                class="form-control border px-2"
+                                id="txtIngresoDepositoAutoridad"
+                                name="txtIngresoDepositoAutoridad"
+                                type="text"
+                                data-error="#failIngresoDepositoAutoridad" />
+                            <p id="failIngresoDepositoAutoridad"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtIngresoDepositoMotivoRetencion" class="form-label">Motivo retención</label>
+                            <input
+                                class="form-control border px-2"
+                                id="txtIngresoDepositoMotivoRetencion"
+                                name="txtIngresoDepositoMotivoRetencion"
+                                type="text"
+                                data-error="#failIngresoDepositoMotivoRetencion" />
+                            <p id="failIngresoDepositoMotivoRetencion"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 mb-3">
+                            <label for="txtIngresoDepositoDisposicion" class="form-label">A disposición de:</label>
+                            <input
+                                class="form-control border px-2"
+                                id="txtIngresoDepositoDisposicion"
+                                name="txtIngresoDepositoDisposicion"
+                                type="text"
+                                data-error="#failIngresoDepositoDisposicion" />
+                            <p id="failIngresoDepositoDisposicion"></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button id="btnCerrarIngresoDeposito" type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Cerrar
+                </button>
+                <button id="btnGuardarIngresoDeposito" type="button" class="btn btn-success">
+                    Guardar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
